@@ -1,27 +1,34 @@
-user_tries = 0
-# while True:
-#     if user_tries == 3:
-#         print("End")
-#         break
-#     user_name = input("Input username\n")
-#     if user_name == "admin":
-#         print("welcome!")
-#         break
-#     user_tries += 1 #user_tries = user_tries + 1
+user_name = "SQZ0111"
 
-for i in range(0,3):
-    user_name = input("Input username\n")
-    if user_name == "admin":
-        print("welcome!")
-        break
+#Datenstrukturen
+#Array
+user_names = ["SQZ0111","SLK111","ReAm","ABC!"]
 
-print("End")
+user_names_containing_s = []
+#print(user_names[:3]) #equivalent zu print(user_names[0:3])
+#print(user_names[::-2]) #print(user_names[0:4:2])
 
-# for i in range(0,4):
-#    print(i)
+#user_names.append("NewUser")
 
-# for i in "text":
-#     print(i)
+#print(user_names)
 
-
-#1. Ersetze aalle while schleifen durch for Schleifen (nach Möglichkeit)
+user_names_uppercase = []
+    
+for username in user_names:
+    #if "s" in username or "S" in username:
+    #    user_names_containing_s.append(username)
+    
+    if username.find("s") != -1 or username.find("S") != -1:
+        user_names_containing_s.append(username)
+    else:
+        print(f"{username} contains no s|S")
+    
+    ##Makes String elements uppercase
+    #username_uppercase = username.upper()
+    #user_names_uppercase.append(username_uppercase) 
+    
+    #ist äquivalent zu oben 
+    #user_names_uppercase.append(username.upper())
+    
+    
+print(user_names_containing_s)
