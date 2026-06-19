@@ -4,6 +4,13 @@
 
 from utils.mathUtils import add,subtract,multiply,division
 
+# import utils.mathUtils as math !not recommended
+
+
+#from utils.mathUtils import * #!should also not be used
+
+
+
 def calculator(operands,operator="+"):
     result  = 0
     if operator == "+":

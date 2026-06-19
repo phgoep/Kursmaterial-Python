@@ -37,3 +37,6 @@ def division(operands: list) -> float|int:
     for item in operands: 
             result = result / item
     return result
+
+def thisIsNotUsed():
+    pass
